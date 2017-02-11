@@ -1,5 +1,5 @@
 # Keep the text file inside folder "data" and keep the file in the same location as the code, change last two lines as required by you.
-#You can download mahabharata.txt from this link:
+#You can download mahabharata.txt from this link: https://ia800302.us.archive.org/34/items/TheMahabharataOfKrishna-dwaipayanaVyasa/MahabharataOfVyasa-EnglishTranslationByKMGanguli_djvu.txt
 #You can use any other text also, just make sure to modify last two lines as required for your work.
 from __future__ import absolute_import, division, print_function
 import codecs
@@ -21,7 +21,7 @@ import seaborn as sns
 nltk.download("punkt")
 nltk.download("stopwords")
 
-book_filenames = sorted(glob.glob("data/clean/*.txt"))
+book_filenames = sorted(glob.glob("data/*.txt"))
 print(book_filenames)
 
 corpus_raw = u""
